@@ -75,7 +75,7 @@ train_data, train_labels = train_data_gen.next()
 print(train_data.shape, train_labels.shape)
 
 # ใช้ SMOTE เพื่อจัดการกับความไม่สมดุลของข้อมูล
-sm = SMOTE(random_state=42)
+sm = SMOTE(k_neighbors=4,random_state=42)
 train_data, train_labels = sm.fit_resample(train_data.reshape(-1, IMG_SIZE * IMG_SIZE * 3), train_labels)
 train_data = train_data.reshape(-1, IMG_SIZE, IMG_SIZE, 3)
 print(train_data.shape, train_labels.shape)
