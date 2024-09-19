@@ -1,3 +1,6 @@
+# Data Set
+# https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images/data
+
 # การนำเข้าไลบรารีที่จำเป็นสำหรับการประมวลผลข้อมูล, การวิเคราะห์, และการสร้างโมเดล
 import numpy as np
 import pandas as pd
